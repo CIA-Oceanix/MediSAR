@@ -11,7 +11,7 @@
 - MediSAR-2020 - NYA
 - MediSAR-2021 - NYA
 - MediSAR-2022 - NYA
-- MSG/SEVIRIS collocations
+- [MSG/SEVIRIS collocations](https://www.kaggle.com/datasets/rignak/medisar-seviri)
 - Sentinel3/OLCI collocations
 
 ## Summary
@@ -31,8 +31,7 @@ This dataset contains data from 2014 to 2022, both included. Due to size limitat
 
 ## Notebooks
 
-- Search file on given lat/lon coordinates.
-- Aggregate the observations for seasonal comparison.
+- [Use the metadata to get lat/lon coordinates](notebooks/use_metadata.ipynb)
 
 ## Changelog
 
