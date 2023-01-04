@@ -7,11 +7,11 @@
 - MediSAR-2016 - NYA
 - MediSAR-2017 - NYA
 - MediSAR-2018 - NYA
-- MediSAR-2019 - NYA
-- MediSAR-2020 - NYA
+- [MediSAR-2019](www.kaggle.com/rignak/medisar2019)
+- [MediSAR-2020](www.kaggle.com/rignak/medisar2020)
 - MediSAR-2021 - NYA
 - MediSAR-2022 - NYA
-- [MSG/SEVIRIS collocations](https://www.kaggle.com/datasets/rignak/medisar-seviri)
+- [MSG/SEVIRI collocations](https://www.kaggle.com/datasets/rignak/medisar-seviri)
 - Sentinel3/OLCI collocations
 
 ## Summary
@@ -35,7 +35,9 @@ This dataset contains data from 2014 to 2022, both included. Due to size limitat
 
 ## Changelog
 
-**2023-01-01:** First upload. 
+
+- **2023-01-02:** Add years 2019 & 2020.
+- **2023-01-01:** First upload. 
 
 ## Roadmap
 
