@@ -4,12 +4,12 @@
 
 - MediSAR-2014 - NYA
 - [MediSAR-2015](www.kaggle.com/rignak/medisar2015)
-- MediSAR-2016 - NYA
-- MediSAR-2017 - NYA
-- MediSAR-2018 - NYA
+- [MediSAR-2016](www.kaggle.com/rignak/medisar2016)
+- [MediSAR-2017](www.kaggle.com/rignak/medisar2017)
+- [MediSAR-2018](www.kaggle.com/rignak/medisar2018)
 - [MediSAR-2019](www.kaggle.com/rignak/medisar2019)
 - [MediSAR-2020](www.kaggle.com/rignak/medisar2020)
-- MediSAR-2021 - NYA
+- [MediSAR-2021](www.kaggle.com/rignak/medisar2021)
 - MediSAR-2022 - NYA
 - [MSG/SEVIRI collocations](https://www.kaggle.com/datasets/rignak/medisar-seviri)
 - Sentinel3/OLCI collocations
@@ -35,12 +35,12 @@ This dataset contains data from 2014 to 2022, both included. Due to size limitat
 
 ## Changelog
 
-
+- **2023-01-08:** Add years 2016, 2017, 2018 & 2021.
 - **2023-01-02:** Add years 2019 & 2020.
 - **2023-01-01:** First upload. 
 
 ## Roadmap
 
-- Upload of years 2014, 2016, 2017, 2018, 2019, 2021 & 2022.
+- Upload of years 2014 & 2022.
 - S3 OLCI colocalizations for ocean colour.
 - Wind estimation with rain-invariant model.
