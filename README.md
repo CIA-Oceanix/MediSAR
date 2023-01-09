@@ -3,13 +3,13 @@
 ## Links
 
 - MediSAR-2014 - NYA
-- [MediSAR-2015](www.kaggle.com/rignak/medisar2015)
-- [MediSAR-2016](www.kaggle.com/rignak/medisar2016)
-- [MediSAR-2017](www.kaggle.com/rignak/medisar2017)
-- [MediSAR-2018](www.kaggle.com/rignak/medisar2018)
-- [MediSAR-2019](www.kaggle.com/rignak/medisar2019)
-- [MediSAR-2020](www.kaggle.com/rignak/medisar2020)
-- [MediSAR-2021](www.kaggle.com/rignak/medisar2021)
+- [MediSAR-2015](https://www.kaggle.com/rignak/medisar2015)
+- [MediSAR-2016](https://www.kaggle.com/rignak/medisar2016)
+- [MediSAR-2017](https://www.kaggle.com/rignak/medisar2017)
+- [MediSAR-2018](https://www.kaggle.com/rignak/medisar2018)
+- [MediSAR-2019](https://www.kaggle.com/rignak/medisar2019)
+- [MediSAR-2020](https://www.kaggle.com/rignak/medisar2020)
+- [MediSAR-2021](https://www.kaggle.com/rignak/medisar2021)
 - MediSAR-2022 - NYA
 - [MSG/SEVIRI collocations](https://www.kaggle.com/datasets/rignak/medisar-seviri)
 - Sentinel3/OLCI collocations
