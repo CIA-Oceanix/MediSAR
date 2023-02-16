@@ -44,8 +44,8 @@ This dataset contains data from 2014 to 2022, both included. Due to size limitat
 
 - The SAR observations of co- (vv) and cross- (vh) polarization channels. Downscaled at 200 m/px and stored as uint16.
 - The rain estimation, as four-class segmentation roughly based on 1 mm/h, 3 mm/h and 10 mm/h. These segmentations are described in [10.48550/ARXIV.2207.07333](https://arxiv.org/abs/2207.07333). There are stored at 400 m/px on four channels, the transparency corresponding to the land mask.
-- The biological slicks, as a uint8 image at 100 m/px. For compression, they quantized to 3 bits per pixel.
-- The convective cells, as a uint8 image at 200 m/px. For compression, they quantized to 3 bits per pixel.
+- The biological slicks, as a uint8 image at 100 m/px. For compression, they are quantized to 3 bits per pixel.
+- The convective cells, as a uint8 image at 200 m/px. For compression, they are quantized to 3 bits per pixel.
 - SAR-based wind speed obtained either from Geophysical Model Function or via a rainfall-resilient deep learning model. They are provided at 1 km/px. The GMF from level-2 product is also included. Both are stored as uint8 images, quantized between 0 and 25.6 m/s. In case of higher wind speeds, 
 - Land masks at 200 m/px.
 
@@ -90,15 +90,14 @@ This dataset contains data from 2014 to 2022, both included. Due to size limitat
 
 ## Changelog
 
+- **2023-02-15:** Add incidence angle, interpolated ERA5 wind speed, aggregation maps.
 - **2023-01-30:** Readme bugfix.
-- **2023-01-29:** Release V1. Add years 2014 & 2022. Add wind speeds.
+- **2023-01-29:** Release V1. Add years 2014 & 2022. Add wind speeds from L2 OCN and deep learning model..
 - **2023-01-08:** Add years 2016, 2017, 2018 & 2021.
 - **2023-01-02:** Add years 2019 & 2020.
 - **2023-01-01:** First upload. 
 
 ## Roadmap
-
-- Add aggregation maps.
 
 - Fill the MSG/SEVIRI collocations for brightness temperature.
 
