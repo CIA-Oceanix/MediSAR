@@ -1,11 +1,15 @@
-# MediSAR
+# Related Paper
 
-[HERE WILL BE THE DOI & APA & BIB WHEN PAPER WILL BE ACCEPTED]
+MediSAR : [PAPER IN PREPARATION]
+
+[Rainfall Estimation with SAR using NEXRAD collocations with Convolutional Neural Networks](https://arxiv.org/abs/2207.07333)
+
+[Reduction of rain-induced errors for wind speed estimation on SAR observations using convolutional neural networks](https://arxiv.org/abs/2303.09200)
 
 ## Table of Content
 
 - [Table of Content](#table-of-content)
-- [Links](#links)
+- [Links to data](#links-to-data)
 - [Summary](#summary)
 - [Content](#content)
     - [SAR Observations](#sar-observations)
@@ -17,7 +21,7 @@
 - [Changelog](#changelog)
 - [Roadmap](#roadmap)
 
-## Links
+## Links to data
 
 - [MediSAR Gibraltar Toy Subset](https://www.kaggle.com/rignak/medisarsubset)
 - [MediSAR-2014](https://www.kaggle.com/rignak/medisar2014)
@@ -30,7 +34,7 @@
 - [MediSAR-2021](https://www.kaggle.com/rignak/medisar2021)
 - [MediSAR-2022](https://www.kaggle.com/rignak/medisar2022)
 - [MSG/SEVIRI collocations](https://www.kaggle.com/datasets/rignak/medisar-seviri) - INCOMPLETE
-- Sentinel-3/OLCI - Not Yet Aired
+- [Sentinel-3/OLCI](https://www.kaggle.com/datasets/rignak/medisar-olci)
 
 ## Summary
 
@@ -43,11 +47,12 @@ SAR observation are affected by the sea surface roughness. Several meteorologica
 This dataset contains data from 2014 to 2022, both included. Due to size limitation, a kaggle dataset is provided for each year. Each IW product is contains in a folder `{YYYY}/{YYYY}-{MM}-{DD}/{YYYY}{MM}{DD}t{hh}{mm}{ss}`. These folders contains:
 
 - The SAR observations of co- (vv) and cross- (vh) polarization channels. Downscaled at 200 m/px and stored as uint16.
-- The rain estimation, as four-class segmentation roughly based on 1 mm/h, 3 mm/h and 10 mm/h. These segmentations are described in [10.48550/ARXIV.2207.07333](https://arxiv.org/abs/2207.07333). There are stored at 400 m/px on four channels, the transparency corresponding to the land mask.
+- The rain estimation, as four-class segmentation roughly based on 1 mm/h, 3 mm/h and 10 mm/h. There are stored at 400 m/px on four channels, the transparency corresponding to the land mask.
 - The biological slicks, as a uint8 image at 100 m/px. For compression, they are quantized to 3 bits per pixel.
 - The convective cells, as a uint8 image at 200 m/px. For compression, they are quantized to 3 bits per pixel.
-- SAR-based wind speed obtained either from Geophysical Model Function or via a rainfall-resilient deep learning model. They are provided at 1 km/px. The GMF from level-2 product is also included. Both are stored as uint8 images, quantized between 0 and 25.6 m/s. In case of higher wind speeds, 
+- SAR-based wind speed obtained either from Geophysical Model Function, a rainfall-resilient deep learning model and ERA5. They are provided at 1 km/px. The GMF from level-2 product is also included. Both are stored as uint8 images, quantized between 0 and 25.6 m/s. In case of higher wind speeds, 
 - Land masks at 200 m/px.
+- Collocations with MSG/SEVIRI (brightness temperature) and Sentinel-3/OLCI (chlorophyll concentration).
 
 ![](readme/global.png)
 
@@ -80,16 +85,17 @@ This dataset contains data from 2014 to 2022, both included. Due to size limitat
 
 - [Use the metadata to get lat/lon coordinates](notebooks/use_metadata.ipynb)
 
-- [List IW over a given lat/lon coordinate]
+- [Compare wind speed distribution from the Geophysical Model and the Deep Learning Rain-Invariant.](https://www.kaggle.com/code/rignak/deep-learning-wind-speed-vs-gmf-2021)
 
-- [Compare wind speed distribution from the Geophysical Model and the Deep Learning Rain-Invariant.](notebooks/deep_learning_wind_speed_vs_gmf.ipynb)
+- [Slicks, convection and rain examples from 2021](https://www.kaggle.com/code/rignak/slicks-convection-rain-2021)
 
-- [Generate aggregated maps]
+- [OLCI Examples](https://www.kaggle.com/code/rignak/medisar-olci-examples)
 
 
 
 ## Changelog
 
+- **2023-03-21:** Add Sentinel-3/OLCI data.
 - **2023-02-15:** Add incidence angle, interpolated ERA5 wind speed, aggregation maps.
 - **2023-01-30:** Readme bugfix.
 - **2023-01-29:** Release V1. Add years 2014 & 2022. Add wind speeds from L2 OCN and deep learning model..
@@ -99,6 +105,8 @@ This dataset contains data from 2014 to 2022, both included. Due to size limitat
 
 ## Roadmap
 
-- Fill the MSG/SEVIRI collocations for brightness temperature.
+- Finish the MSG/SEVIRI collocations for brightness temperature.
 
-- Sentinel3/OLCI colocalizations for chlorophyll concentration.
+- Redo the VH quicklooks (GMF change).
+
+- Publish the paper.
