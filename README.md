@@ -71,10 +71,20 @@ This dataset contains data from 2014 to 2022, both included. Due to size limitat
 #### 20170316t172911
 ![](readme/examples/20170316t172911.png)
 
+### Sentinel-3 OLCI
+
+#### 20220511t055414
+![](readme/examples/20220511t055414.png)
+
 ### Convective Cells
 
 #### 20171218t044059
 ![](readme/examples/20171218t044059.png)
+
+### MSG/SEVIRI
+
+#### 20210103t170440
+![](readme/examples/20210103t170440.png)
 
 ### SAR-based wind speed
 
@@ -91,10 +101,11 @@ This dataset contains data from 2014 to 2022, both included. Due to size limitat
 
 - [OLCI Examples](https://www.kaggle.com/code/rignak/medisar-olci-examples)
 
-
+- [SEVIRI Examples](https://www.kaggle.com/rignak/medisar-seviri-examples)
 
 ## Changelog
 
+- **2023-03-26:** Add MSG/SEVIRI notebook.
 - **2023-03-21:** Add Sentinel-3/OLCI data.
 - **2023-02-15:** Add incidence angle, interpolated ERA5 wind speed, aggregation maps.
 - **2023-01-30:** Readme bugfix.
@@ -105,7 +116,7 @@ This dataset contains data from 2014 to 2022, both included. Due to size limitat
 
 ## Roadmap
 
-- Finish the MSG/SEVIRI collocations for brightness temperature.
+- Finish the MSG/SEVIRI collocations for brightness temperature. Currently, borders were incorrectly filled with nearest value rather than NaN.
 
 - Redo the VH quicklooks (GMF change).
 
